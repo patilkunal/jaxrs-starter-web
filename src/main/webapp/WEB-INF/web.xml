@@ -1,7 +1,25 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">  
+	<display-name>Archetype Created Web Application</display-name>
 
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
+<!-- 
+<servlet>
+    <servlet-name>com.inovision.web.rest.RESTApplication</servlet-name>
+    
+    <multipart-config>
+        <location>/temp</location>
+        <max-file-size>35000000</max-file-size>
+        <max-request-size>218018841</max-request-size>
+        <file-size-threshold>30000</file-size-threshold>
+    </multipart-config>
+</servlet>
+<servlet-mapping>
+    <servlet-name>com.inovision.web.rest.RESTApplication</servlet-name>
+    <url-pattern>/rest/*</url-pattern>
+</servlet-mapping>
+
+ -->
+ 
 </web-app>
