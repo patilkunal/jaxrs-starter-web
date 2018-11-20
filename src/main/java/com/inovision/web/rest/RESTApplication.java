@@ -22,6 +22,7 @@ public class RESTApplication extends Application {
 		final Set<Class<?>> resources = new java.util.HashSet<>();
 		resources.add(HelloRestResource.class);
 		resources.add(FileUploadResource.class);
+		resources.add(UserDetailResource.class);
 		return resources;
 	}
 	

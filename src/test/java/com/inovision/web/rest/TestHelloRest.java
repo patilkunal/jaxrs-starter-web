@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class TestHelloRest extends BaseRestTest {
 
-	@Test
+	//@Test
 	public void testHelloWorld() throws Exception {
 		String uri = REST_URI + "/hello/world";
 		String response = doGet(uri);

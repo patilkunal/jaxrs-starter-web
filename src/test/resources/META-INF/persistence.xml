@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+    xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <persistence-unit name="persistenceUnit"
+        transaction-type="JTA">
+        
+        <!-- for hibernate previous to  4.3.0 
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+         -->
+         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>         
+        <jta-data-source>jdbc/StarterDS</jta-data-source>
+        <jar-file>${project.basedir}/target/classes</jar-file>
+        <class>com.inovision.ejb.entity.UserDetail</class>
+        
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
+            <!-- <property name="hibernate.dialect" value="org.hibernate.dialect.DerbyTenSevenDialect" /> -->
+            <property name="hibernate.max_fetch_depth" value="3" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform" />
+        </properties>
+        
+    </persistence-unit>
+</persistence>
